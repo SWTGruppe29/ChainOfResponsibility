@@ -1,0 +1,11 @@
+C:\Users\math0\Desktop\ChainOfResponsibility\SimpleExampleCoR\SimpleExampleCoR\bin\Debug\netcoreapp2.2\SimpleExampleCoR.deps.json
+C:\Users\math0\Desktop\ChainOfResponsibility\SimpleExampleCoR\SimpleExampleCoR\bin\Debug\netcoreapp2.2\SimpleExampleCoR.runtimeconfig.json
+C:\Users\math0\Desktop\ChainOfResponsibility\SimpleExampleCoR\SimpleExampleCoR\bin\Debug\netcoreapp2.2\SimpleExampleCoR.runtimeconfig.dev.json
+C:\Users\math0\Desktop\ChainOfResponsibility\SimpleExampleCoR\SimpleExampleCoR\bin\Debug\netcoreapp2.2\SimpleExampleCoR.dll
+C:\Users\math0\Desktop\ChainOfResponsibility\SimpleExampleCoR\SimpleExampleCoR\bin\Debug\netcoreapp2.2\SimpleExampleCoR.pdb
+C:\Users\math0\Desktop\ChainOfResponsibility\SimpleExampleCoR\SimpleExampleCoR\obj\Debug\netcoreapp2.2\SimpleExampleCoR.csprojAssemblyReference.cache
+C:\Users\math0\Desktop\ChainOfResponsibility\SimpleExampleCoR\SimpleExampleCoR\obj\Debug\netcoreapp2.2\SimpleExampleCoR.csproj.CoreCompileInputs.cache
+C:\Users\math0\Desktop\ChainOfResponsibility\SimpleExampleCoR\SimpleExampleCoR\obj\Debug\netcoreapp2.2\SimpleExampleCoR.AssemblyInfoInputs.cache
+C:\Users\math0\Desktop\ChainOfResponsibility\SimpleExampleCoR\SimpleExampleCoR\obj\Debug\netcoreapp2.2\SimpleExampleCoR.AssemblyInfo.cs
+C:\Users\math0\Desktop\ChainOfResponsibility\SimpleExampleCoR\SimpleExampleCoR\obj\Debug\netcoreapp2.2\SimpleExampleCoR.dll
+C:\Users\math0\Desktop\ChainOfResponsibility\SimpleExampleCoR\SimpleExampleCoR\obj\Debug\netcoreapp2.2\SimpleExampleCoR.pdb
