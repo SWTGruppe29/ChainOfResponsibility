@@ -9,3 +9,14 @@ C:\Users\math0\source\repos\SWTGruppe29\ChainOfResponsibility\CodeExample\Number
 C:\Users\math0\source\repos\SWTGruppe29\ChainOfResponsibility\CodeExample\NumberCor\NumberCor\obj\Debug\netcoreapp2.2\NumberCor.AssemblyInfo.cs
 C:\Users\math0\source\repos\SWTGruppe29\ChainOfResponsibility\CodeExample\NumberCor\NumberCor\obj\Debug\netcoreapp2.2\NumberCor.dll
 C:\Users\math0\source\repos\SWTGruppe29\ChainOfResponsibility\CodeExample\NumberCor\NumberCor\obj\Debug\netcoreapp2.2\NumberCor.pdb
+C:\Users\math0\Desktop\ChainOfResponsibility\CodeExample\NumberCor\NumberCor\bin\Debug\netcoreapp2.2\NumberCor.deps.json
+C:\Users\math0\Desktop\ChainOfResponsibility\CodeExample\NumberCor\NumberCor\bin\Debug\netcoreapp2.2\NumberCor.runtimeconfig.json
+C:\Users\math0\Desktop\ChainOfResponsibility\CodeExample\NumberCor\NumberCor\bin\Debug\netcoreapp2.2\NumberCor.runtimeconfig.dev.json
+C:\Users\math0\Desktop\ChainOfResponsibility\CodeExample\NumberCor\NumberCor\bin\Debug\netcoreapp2.2\NumberCor.dll
+C:\Users\math0\Desktop\ChainOfResponsibility\CodeExample\NumberCor\NumberCor\bin\Debug\netcoreapp2.2\NumberCor.pdb
+C:\Users\math0\Desktop\ChainOfResponsibility\CodeExample\NumberCor\NumberCor\obj\Debug\netcoreapp2.2\NumberCor.csprojAssemblyReference.cache
+C:\Users\math0\Desktop\ChainOfResponsibility\CodeExample\NumberCor\NumberCor\obj\Debug\netcoreapp2.2\NumberCor.csproj.CoreCompileInputs.cache
+C:\Users\math0\Desktop\ChainOfResponsibility\CodeExample\NumberCor\NumberCor\obj\Debug\netcoreapp2.2\NumberCor.AssemblyInfoInputs.cache
+C:\Users\math0\Desktop\ChainOfResponsibility\CodeExample\NumberCor\NumberCor\obj\Debug\netcoreapp2.2\NumberCor.AssemblyInfo.cs
+C:\Users\math0\Desktop\ChainOfResponsibility\CodeExample\NumberCor\NumberCor\obj\Debug\netcoreapp2.2\NumberCor.dll
+C:\Users\math0\Desktop\ChainOfResponsibility\CodeExample\NumberCor\NumberCor\obj\Debug\netcoreapp2.2\NumberCor.pdb

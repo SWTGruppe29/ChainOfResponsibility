@@ -21,7 +21,7 @@ namespace NumberCor
             return _nextHandler?.Handle(request);
         }
 
-        //monkey.SetNext(PositivHandler).SetNext(ZeroHandler).SetNext(NegativHandler).SetNext(EndHandler);
+        //SetNext(PositivHandler).SetNext(ZeroHandler).SetNext(NegativHandler).SetNext(EndHandler);
         public IHandler SetNext(IHandler nextHandler)
         {
             this._nextHandler = nextHandler;
@@ -37,7 +37,7 @@ namespace NumberCor
             {
                 return $"PositiveHandler: The request number: {Int32.Parse(request.ToString())} is positive";
             }
-
+            Console.WriteLine("POSITIVE: NOT HANDLED");
             return base.Handle(request);
         }
 
@@ -51,7 +51,7 @@ namespace NumberCor
             {
                 return $"ZeroHandler: The request number: {Int32.Parse(request.ToString())} is zero";
             }
-
+            Console.WriteLine("ZERO: NOT HANDLED");
             return base.Handle(request);
         }
     }
@@ -64,7 +64,7 @@ namespace NumberCor
             {
                 return $"NegativeHandler: The request number: {Int32.Parse(request.ToString())} is negative";
             }
-
+            Console.WriteLine("NEGATIVE: NOT HANDLED");
             return base.Handle(request);
         }
     }
@@ -81,12 +81,12 @@ namespace NumberCor
 
                 if (result != null)
                 {
-                    Console.WriteLine($"{result}");
+                    Console.WriteLine($"{result}\n");
                 }
                 else
                 {
                     //da vi arbejder med tal, burder dette aldrig kunne blive muligt, men det vil blive illustreret ved at glemme at sætte en handler på Cor.
-                    Console.WriteLine($"{number} did not get handled in the handlers.");
+                    Console.WriteLine($"{number} did not get handled in the handlers.\n");
                 }
             }
         }
@@ -111,7 +111,7 @@ namespace NumberCor
             Console.WriteLine("\n\n");
 
             Console.WriteLine("ZeroHandler > NegativeHandler");
-            Console.WriteLine("Alle positive tal, skal komme ud uden at være handlet.");
+            Console.WriteLine("All positive numbers wont be handled in this Cor.");
             Client.ClientCode(Zero);
 
             Console.ReadKey();
