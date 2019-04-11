@@ -20,12 +20,8 @@ namespace ATMEnhanced.Classes
             SeparationChecker separationChecker = new SeparationChecker(new SeparationCondition(300,5000));
             ConsolePrinter consolePrinter = new ConsolePrinter();
             Logger logger = new Logger();
-            receiver.SetSuccessor(decoder);
-            decoder.SetSuccessor(regionFilter);
-            regionFilter.SetSuccessor(trackUpdater);
-            trackUpdater.SetSuccessor(separationChecker);
-            separationChecker.SetSuccessor(consolePrinter);
-            consolePrinter.SetSuccessor(logger);
+            receiver.SetSuccessor(decoder).SetSuccessor(regionFilter).SetSuccessor(trackUpdater)
+                .SetSuccessor(separationChecker).SetSuccessor(consolePrinter).SetSuccessor(logger);
         }
     }
 }
