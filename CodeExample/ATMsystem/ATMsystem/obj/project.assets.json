@@ -477,7 +477,7 @@
       ]
     },
     "Microsoft.NETCore.DotNetAppHost/2.2.0": {
-      "sha512": "OK/H8p9Ig6mLMITjXJ4VOewrJg/TU+dAPHE4BdMWMv+8COzBehf7XF1+DofKkmqdHpO2cJoS5Sc9PEZ6PKCbsg==",
+      "sha512": "qIrVLupwT2NYTrf7KM7Nh+mJr36V5MITVRjyGOByVVCwGmQgQmI/6bjZYQv+QdExi4Cm87eCKJX9FdT6nc00Xg==",
       "type": "package",
       "path": "microsoft.netcore.dotnetapphost/2.2.0",
       "files": [
@@ -519,7 +519,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.2.0": {
-      "sha512": "T/J+XZo+YheFTJh8/4uoeJDdz5qOmOMkjg6/VL8mHJ9AnP8+fmV/kcbxeXsob0irRNiChf+V0ig1MCRLp/+Kog==",
+      "sha512": "39+GVHdbm+cmoOjdvm+fhiMbddnuVyUlBdYS8Yhn5xsNaBoTXpgBsxQQlI2Sv9EjIP0F+itG6yrDaOM2OEGupQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.2.0",
       "files": [
@@ -687,23 +687,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\math0\\.nuget\\packages\\": {},
+    "C:\\Users\\valde\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\math0\\source\\repos\\SWTGruppe29\\ChainOfResponsibility\\CodeExample\\ATMsystem\\ATMsystem\\ATMsystem.csproj",
+      "projectUniqueName": "C:\\Users\\valde\\source\\repos\\SWTGruppe29\\ChainOfResponsibility\\CodeExample\\ATMsystem\\ATMsystem\\ATMsystem.csproj",
       "projectName": "ATMsystem",
-      "projectPath": "C:\\Users\\math0\\source\\repos\\SWTGruppe29\\ChainOfResponsibility\\CodeExample\\ATMsystem\\ATMsystem\\ATMsystem.csproj",
-      "packagesPath": "C:\\Users\\math0\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\math0\\source\\repos\\SWTGruppe29\\ChainOfResponsibility\\CodeExample\\ATMsystem\\ATMsystem\\obj\\",
+      "projectPath": "C:\\Users\\valde\\source\\repos\\SWTGruppe29\\ChainOfResponsibility\\CodeExample\\ATMsystem\\ATMsystem\\ATMsystem.csproj",
+      "packagesPath": "C:\\Users\\valde\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\valde\\source\\repos\\SWTGruppe29\\ChainOfResponsibility\\CodeExample\\ATMsystem\\ATMsystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\math0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\valde\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
