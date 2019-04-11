@@ -124,10 +124,8 @@ namespace ATM.Classes
 
         private void List(string s)
         {
-            
             datastring = s.Split(';').Reverse().ToList<string>();
             datastring.Reverse();
-            
         }
 
         private void dateConverter()
