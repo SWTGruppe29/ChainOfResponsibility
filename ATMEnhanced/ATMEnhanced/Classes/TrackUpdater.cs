@@ -16,6 +16,12 @@ namespace ATMEnhanced.Classes
         private List<Track> _prevTracks;
         private DateTime dateTimeNow;
 
+        public TrackUpdater(ITrackCalculator calculator)
+        {
+            _calculator = calculator;
+            _prevTracks = new List<Track>();
+        }
+
         protected override void Handle(object data)
         {
             TrackData trackData = (TrackData)data;

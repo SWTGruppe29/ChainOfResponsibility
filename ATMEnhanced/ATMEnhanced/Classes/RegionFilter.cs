@@ -14,6 +14,10 @@ namespace ATMEnhanced.Classes
         private IAirSpace _airSpace;
         List<Track> _trackData = new List<Track>();
 
+        public RegionFilter(IAirSpace airSpace)
+        {
+            _airSpace = airSpace;
+        }
 
 
         protected override void Handle(object data)
