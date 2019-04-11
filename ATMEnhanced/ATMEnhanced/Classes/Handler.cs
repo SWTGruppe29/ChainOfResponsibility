@@ -20,5 +20,6 @@ namespace ATMEnhanced.Classes
         {
             _successor?.Handle(data);
         }
+
     }
 }
