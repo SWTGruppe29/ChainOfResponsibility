@@ -11,11 +11,9 @@ namespace ATMEnhanced.Classes
     public class TransponderDataReceiver : Handler, ITransponderDataReceiver
     {
         private ITransponderReceiver _transponderReceiver;
-        private Decoder _decoder;
 
         public TransponderDataReceiver(ITransponderReceiver transponderReceiver)
         {
-            _decoder = new Decoder();
             _transponderReceiver = transponderReceiver;
             // Subscribing to event
             _transponderReceiver.TransponderDataReady += ReceiverTransponderReady;
@@ -26,7 +24,7 @@ namespace ATMEnhanced.Classes
         {
             if (e.TransponderData.Count > 0)
             {
-                base.Handle();
+                base.Handle(e.TransponderData);
             }
         }
 

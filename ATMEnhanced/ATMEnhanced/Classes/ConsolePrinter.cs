@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using ATM.Interfaces;
+using ATM.Classes;
+using ATMEnhanced.Interfaces;
 
-namespace ATM.Classes
+namespace ATMEnhanced.Classes
 {
-    public class ConsolePrinter : IConsolePrinter
+    public class ConsolePrinter : Handler, IConsolePrinter
     {
         /// <summary>
         /// Receives a List of tracks currently in the airspace, and tracks in conflict by 
@@ -14,25 +15,26 @@ namespace ATM.Classes
         /// <param name="conflictTags">Tracks in breaking separation condition in the airspace</param>
         public void Print(List<Track> tracks, List<Conflict> conflictTags) 
         {
-            //Console.Clear(); //Uncomment this when not unittesting
-            
             if (!PrintTracks(tracks))
                 return;
             
-            printConflicts(conflictTags);
+            PrintConflicts(conflictTags);
         }
 
-        public void ConsoleSeparationDataHandler(object sender, ConsoleSeparationEventArgs args)
+        protected override void Handle(object data)
         {
-            Print(args.tracks, args.conflictList);
+            TrackData trackData = (TrackData) data;
+            Print(trackData.Tracks, trackData.Conflicts);
+            base.Handle(data);
         }
+
 
         /// <summary>
         /// Returns false if no airplanes was in conflict, else true
         /// </summary>
         /// <param name="conflictTags"></param>
         /// <returns></returns>
-        public bool printConflicts(List<Conflict> conflictTags)
+        public bool PrintConflicts(List<Conflict> conflictTags)
         {
             if (conflictTags.Count == 0)
             {
