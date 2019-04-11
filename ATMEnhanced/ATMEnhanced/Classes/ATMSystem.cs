@@ -97,16 +97,16 @@ namespace ATM.Classes
                         }
                 }
 
-                SeparationLogEventArgs logArgs = new SeparationLogEventArgs();
-                logArgs.ConflictList = _conflictList;
-                SeparationLogDataReady?.Invoke(this, logArgs);
+                //SeparationLogEventArgs logArgs = new SeparationLogEventArgs();
+                //logArgs.ConflictList = _conflictList;
+                //SeparationLogDataReady?.Invoke(this, logArgs);
 
-                ConsoleSeparationEventArgs conArgs = new ConsoleSeparationEventArgs()
-                {
-                    conflictList = _conflictList,
-                    tracks = Tracks
-                };
-                ConsoleSeparationDataReady?.Invoke(this, conArgs);
+                //ConsoleSeparationEventArgs conArgs = new ConsoleSeparationEventArgs()
+                //{
+                //    conflictList = _conflictList,
+                //    tracks = Tracks
+                //};
+                //ConsoleSeparationDataReady?.Invoke(this, conArgs);
                 
             }
         }

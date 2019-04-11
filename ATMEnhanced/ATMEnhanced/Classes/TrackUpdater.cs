@@ -5,19 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using ATM.Classes;
 using ATM.Interfaces;
+using ATMEnhanced.Interfaces;
 using static ATM.Interfaces.ITrackCalculator;
 
 namespace ATMEnhanced.Classes
 {
-    class TrackUpdater : Handler
+    class TrackUpdater : Handler, ITrackUpdater
     {
         private ITrackCalculator _calculator;
         private List<Track> _prevTracks;
         private DateTime dateTimeNow;
 
-        protected override void Handle(TrackData data)
+        protected override void Handle(object data)
         {
-            foreach (var tracks in data.Tracks)
+            TrackData trackData = (TrackData)data;
+            foreach (var tracks in trackData.Tracks)
             {
                 int index = CheckIfTrackIsInList(tracks.Tag);
                 if (index>=0)
@@ -28,7 +30,7 @@ namespace ATMEnhanced.Classes
                 }
             }
             //overskriver de gamle tracks med de nye.
-            _prevTracks = data.Tracks;
+            _prevTracks = trackData.Tracks;
 
             base.Handle(data);
         }
