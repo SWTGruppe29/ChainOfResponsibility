@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATMsystem", "ATMsystem\ATMsystem.csproj", "{22DC5A95-8C54-4BC8-93D9-FA53BF8D6A5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ATMsystem", "ATMsystem\ATMsystem.csproj", "{22DC5A95-8C54-4BC8-93D9-FA53BF8D6A5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E4B1AA3C-016D-4FCE-9E14-4BB9FF848E48}"
+	ProjectSection(SolutionItems) = preProject
+		TransponderReceiver.dll = TransponderReceiver.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
