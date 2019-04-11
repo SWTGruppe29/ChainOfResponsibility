@@ -9,6 +9,9 @@ namespace ATMEnhanced.Classes
 {
     public class Decoder : Handler, IDecoder
     {
+        protected override void Handle()
+        {
 
+        }
     }
 }

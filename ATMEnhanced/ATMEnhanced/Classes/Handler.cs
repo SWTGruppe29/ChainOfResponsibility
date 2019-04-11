@@ -15,7 +15,7 @@ namespace ATMEnhanced.Classes
             _successor = successor;
         }
 
-        protected void Handle()
+        protected virtual void Handle()
         {
             _successor?.Handle();
         }
