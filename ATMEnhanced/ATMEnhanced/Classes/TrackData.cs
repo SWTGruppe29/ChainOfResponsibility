@@ -3,17 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ATMEnhanced.Interfaces;
+using ATM.Classes;
 
 namespace ATMEnhanced.Classes
 {
-    public class Decoder : Handler, IDecoder
+    public class TrackData
     {
-        protected override void Handle(TrackData data)
-        {
-
-
-
-        }
+        public List<Track> Tracks { get; set; }
+        public List<Conflict> Conflicts { get; set; }
     }
 }

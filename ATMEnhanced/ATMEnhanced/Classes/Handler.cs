@@ -10,14 +10,15 @@ namespace ATMEnhanced.Classes
     {
         protected Handler _successor;
 
-        public void SetSuccessor(Handler successor)
+        public Handler SetSuccessor(Handler successor)
         {
             _successor = successor;
+            return _successor;
         }
 
-        protected void Handle()
+        protected virtual void Handle(TrackData data)
         {
-            _successor?.Handle();
+            _successor?.Handle(data);
         }
     }
 }
