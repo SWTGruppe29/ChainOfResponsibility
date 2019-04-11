@@ -45,6 +45,8 @@ namespace ATM.Classes
             this.receiver.TransponderDataReady += ReceiverOnTransponderReady;
             this.SeparationLogDataReady += _logger.SeparationLogDataHandler;
             this.ConsoleSeparationDataReady += _consolePrinter.ConsoleSeparationDataHandler;
+
+            
         }
 
         

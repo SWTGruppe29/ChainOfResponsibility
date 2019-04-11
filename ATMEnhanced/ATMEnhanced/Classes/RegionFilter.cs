@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ATMEnhanced.Classes
 {
-    class RegionFilter
+    class RegionFilter : Handler
     {
+        protected override void Handle(TrackData data)
+        {
+            
+        }
     }
 }
