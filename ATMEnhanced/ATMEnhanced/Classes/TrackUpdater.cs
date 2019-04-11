@@ -10,7 +10,7 @@ using static ATM.Interfaces.ITrackCalculator;
 
 namespace ATMEnhanced.Classes
 {
-    class TrackUpdater : Handler, ITrackUpdater
+    public class TrackUpdater : Handler, ITrackUpdater
     {
         private ITrackCalculator _calculator;
         private List<Track> _prevTracks;

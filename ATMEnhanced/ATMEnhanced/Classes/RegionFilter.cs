@@ -9,10 +9,12 @@ using ATMEnhanced.Interfaces;
 
 namespace ATMEnhanced.Classes
 {
-    class RegionFilter : Handler, IRegionFilter
+    public class RegionFilter : Handler, IRegionFilter
     {
         private IAirSpace _airSpace;
         List<Track> _trackData = new List<Track>();
+
+
 
         protected override void Handle(object data)
         {
