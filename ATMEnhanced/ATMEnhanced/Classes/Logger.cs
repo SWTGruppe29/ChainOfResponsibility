@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ATM.Interfaces;
+using ATM.Classes;
+using ATMEnhanced.Interfaces;
 
-namespace ATM.Classes
+namespace ATMEnhanced.Classes
 {
-    public class Logger : ILogger
+    public class Logger : Handler, ILogger
     {
         /// <summary>
         /// Logs the time of the occurence and the involved tags.
@@ -51,10 +49,15 @@ namespace ATM.Classes
             
         }
 
-        public void SeparationLogDataHandler(object sender, SeparationLogEventArgs e)
+        protected override void Handle(object data)
         {
-            LogMessage(e.ConflictList);
-        }
+            TrackData trackData = (TrackData)data;
+            if (trackData.Conflicts.Count != 0)
+            {
+                LogMessage(trackData.Conflicts);
+            }
 
+            base.Handle(data);
+        }
     }
 }
