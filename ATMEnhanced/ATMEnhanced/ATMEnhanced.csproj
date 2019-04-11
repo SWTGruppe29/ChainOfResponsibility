@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Classes\AirSpace.cs" />
     <Compile Include="Classes\ATMSystem.cs" />
+    <Compile Include="Classes\ATMSystemFactory.cs" />
     <Compile Include="Classes\Conflict.cs" />
     <Compile Include="Classes\ConsolePrinter.cs" />
     <Compile Include="Classes\Decoder.cs" />

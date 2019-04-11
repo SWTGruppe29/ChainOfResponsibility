@@ -17,15 +17,18 @@ namespace ATM.Classes
             TrackData trackData = (TrackData) data;
             foreach (var track in trackData.Tracks)
             {
-                _currentConflicts.AddRange(CheckForSeparation(trackData.Tracks,track));
+                CheckForSeparation(trackData.Tracks, track);
             }
 
+            trackData.Conflicts = _currentConflicts;
+            base.Handle(trackData);
         }
-        //public enum Direction {north,south,east,west};
+
         private ICondition _separationCondition;
         private List<Conflict> _currentConflicts;
+
         
-        public SeparationChecker(IAirSpace airSpace, ICondition separationCondition)
+        public SeparationChecker(ICondition separationCondition)
         {
             _separationCondition = separationCondition;
             _currentConflicts = new List<Conflict>();
