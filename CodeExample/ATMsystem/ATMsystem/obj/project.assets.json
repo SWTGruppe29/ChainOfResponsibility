@@ -477,7 +477,7 @@
       ]
     },
     "Microsoft.NETCore.DotNetAppHost/2.2.0": {
-      "sha512": "qIrVLupwT2NYTrf7KM7Nh+mJr36V5MITVRjyGOByVVCwGmQgQmI/6bjZYQv+QdExi4Cm87eCKJX9FdT6nc00Xg==",
+      "sha512": "OK/H8p9Ig6mLMITjXJ4VOewrJg/TU+dAPHE4BdMWMv+8COzBehf7XF1+DofKkmqdHpO2cJoS5Sc9PEZ6PKCbsg==",
       "type": "package",
       "path": "microsoft.netcore.dotnetapphost/2.2.0",
       "files": [
@@ -687,23 +687,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\valde\\.nuget\\packages\\": {},
+    "C:\\Users\\thoma\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\valde\\source\\repos\\SWTGruppe29\\ChainOfResponsibility\\CodeExample\\ATMsystem\\ATMsystem\\ATMsystem.csproj",
+      "projectUniqueName": "C:\\Users\\thoma\\Documents\\Repos\\ChainOfResponsibility\\CodeExample\\ATMsystem\\ATMsystem\\ATMsystem.csproj",
       "projectName": "ATMsystem",
-      "projectPath": "C:\\Users\\valde\\source\\repos\\SWTGruppe29\\ChainOfResponsibility\\CodeExample\\ATMsystem\\ATMsystem\\ATMsystem.csproj",
-      "packagesPath": "C:\\Users\\valde\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\valde\\source\\repos\\SWTGruppe29\\ChainOfResponsibility\\CodeExample\\ATMsystem\\ATMsystem\\obj\\",
+      "projectPath": "C:\\Users\\thoma\\Documents\\Repos\\ChainOfResponsibility\\CodeExample\\ATMsystem\\ATMsystem\\ATMsystem.csproj",
+      "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thoma\\Documents\\Repos\\ChainOfResponsibility\\CodeExample\\ATMsystem\\ATMsystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\valde\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
