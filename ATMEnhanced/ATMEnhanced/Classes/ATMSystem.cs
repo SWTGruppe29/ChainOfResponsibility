@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ATM.Interfaces;
+using ATMEnhanced.Interfaces;
 using TransponderReceiver;
 
 namespace ATM.Classes
@@ -28,8 +29,8 @@ namespace ATM.Classes
         private ITrackCalculator _calc;
 
         List<Conflict> _conflictList = new List<Conflict>();
-        public event EventHandler<SeparationLogEventArgs> SeparationLogDataReady;
-        public event EventHandler<ConsoleSeparationEventArgs> ConsoleSeparationDataReady;
+        //public event EventHandler<SeparationLogEventArgs> SeparationLogDataReady;
+        //public event EventHandler<ConsoleSeparationEventArgs> ConsoleSeparationDataReady;
 
         public ATMSystem(IATMFactory factory, ITransponderReceiver transponderReceiver)
         {   
@@ -43,10 +44,8 @@ namespace ATM.Classes
 
             //Subscribing to events
             this.receiver.TransponderDataReady += ReceiverOnTransponderReady;
-            this.SeparationLogDataReady += _logger.SeparationLogDataHandler;
-            this.ConsoleSeparationDataReady += _consolePrinter.ConsoleSeparationDataHandler;
-
-            
+            //this.SeparationLogDataReady += _logger.SeparationLogDataHandler;
+            //this.ConsoleSeparationDataReady += _consolePrinter.ConsoleSeparationDataHandler;
         }
 
         
@@ -126,10 +125,8 @@ namespace ATM.Classes
 
         private void List(string s)
         {
-            
             datastring = s.Split(';').Reverse().ToList<string>();
             datastring.Reverse();
-            
         }
 
         private void dateConverter()

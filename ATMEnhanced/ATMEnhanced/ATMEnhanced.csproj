@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Classes\AirSpace.cs" />
     <Compile Include="Classes\ATMSystem.cs" />
+    <Compile Include="Classes\ATMSystemFactory.cs" />
     <Compile Include="Classes\Conflict.cs" />
     <Compile Include="Classes\ConsolePrinter.cs" />
     <Compile Include="Classes\Decoder.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="Classes\TrackCalculator.cs" />
     <Compile Include="Classes\TrackData.cs" />
     <Compile Include="Classes\TrackUpdater.cs" />
+    <Compile Include="Classes\TransponderDataReceiver.cs" />
     <Compile Include="Interfaces\IAirSpace.cs" />
     <Compile Include="Interfaces\IATMFactory.cs" />
     <Compile Include="Interfaces\IATMSystem.cs" />
@@ -72,6 +74,7 @@
     <Compile Include="Interfaces\ISeparationChecker.cs" />
     <Compile Include="Interfaces\ITrackCalculator.cs" />
     <Compile Include="Interfaces\ITrackUpdater.cs" />
+    <Compile Include="Interfaces\ITransponderDataReceiver.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
