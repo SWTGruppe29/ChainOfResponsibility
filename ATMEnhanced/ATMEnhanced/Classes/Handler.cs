@@ -16,9 +16,9 @@ namespace ATMEnhanced.Classes
             return _successor;
         }
 
-        protected virtual void Handle()
+        protected virtual void Handle(TrackData data)
         {
-            _successor?.Handle();
+            _successor?.Handle(data);
         }
     }
 }

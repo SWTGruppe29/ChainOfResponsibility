@@ -59,6 +59,7 @@
     <Compile Include="Classes\SeparationCondition.cs" />
     <Compile Include="Classes\Track.cs" />
     <Compile Include="Classes\TrackCalculator.cs" />
+    <Compile Include="Classes\TrackData.cs" />
     <Compile Include="Classes\TrackUpdater.cs" />
     <Compile Include="Interfaces\IAirSpace.cs" />
     <Compile Include="Interfaces\IATMFactory.cs" />
