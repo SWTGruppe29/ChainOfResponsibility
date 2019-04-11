@@ -43,6 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Decoder.cs" />
+    <Compile Include="Classes\Handler.cs" />
+    <Compile Include="Classes\RegionFilter.cs" />
+    <Compile Include="Classes\TrackUpdater.cs" />
+    <Compile Include="Interfaces\IDecoder.cs" />
+    <Compile Include="Interfaces\IRegionFilter.cs" />
+    <Compile Include="Interfaces\ITrackUpdater.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
