@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing.Text;
+
 using System.Linq;
-using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using ATM.Interfaces;
-using OfficeOpenXml.FormulaParsing.Excel.Functions.Math;
 
 namespace ATM.Classes
 {

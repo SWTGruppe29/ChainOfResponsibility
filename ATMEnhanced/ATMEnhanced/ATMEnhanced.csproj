@@ -43,12 +43,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\AirSpace.cs" />
+    <Compile Include="Classes\Conflict.cs" />
+    <Compile Include="Classes\ConsolePrinter.cs" />
     <Compile Include="Classes\Decoder.cs" />
     <Compile Include="Classes\Handler.cs" />
+    <Compile Include="Classes\Logger.cs" />
+    <Compile Include="Classes\Point.cs" />
     <Compile Include="Classes\RegionFilter.cs" />
+    <Compile Include="Classes\SeparationChecker.cs" />
+    <Compile Include="Classes\SeparationCondition.cs" />
+    <Compile Include="Classes\Track.cs" />
+    <Compile Include="Classes\TrackCalculator.cs" />
     <Compile Include="Classes\TrackUpdater.cs" />
+    <Compile Include="Interfaces\IAirSpace.cs" />
+    <Compile Include="Interfaces\ICondition.cs" />
+    <Compile Include="Interfaces\IConsolePrinter.cs" />
     <Compile Include="Interfaces\IDecoder.cs" />
+    <Compile Include="Interfaces\ILogger.cs" />
     <Compile Include="Interfaces\IRegionFilter.cs" />
+    <Compile Include="Interfaces\ISeparationChecker.cs" />
+    <Compile Include="Interfaces\ITrackCalculator.cs" />
     <Compile Include="Interfaces\ITrackUpdater.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
