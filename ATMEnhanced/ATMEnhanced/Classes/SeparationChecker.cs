@@ -14,13 +14,14 @@ namespace ATM.Classes
     {
         protected override void Handle(object data)
         {
-            TrackData trackData = (TrackData) data;
-            foreach (var track in trackData.Tracks)
+            List<Track> tracks = (List<Track>) data;
+            foreach (var track in tracks)
             {
-                CheckForSeparation(trackData.Tracks, track);
+                CheckForSeparation(tracks, track);
             }
-
+            TrackData trackData = new TrackData();
             trackData.Conflicts = _currentConflicts;
+            trackData.Tracks = tracks;
             base.Handle(trackData);
         }
 

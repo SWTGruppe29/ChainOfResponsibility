@@ -16,16 +16,15 @@ namespace ATMEnhanced.Classes
         private List<Track> _prevTracks;
         private DateTime dateTimeNow;
 
-        public TrackUpdater(ITrackCalculator calculator)
+        public TrackUpdater()
         {
-            _calculator = calculator;
             _prevTracks = new List<Track>();
         }
 
         protected override void Handle(object data)
         {
-            TrackData trackData = (TrackData)data;
-            foreach (var tracks in trackData.Tracks)
+            List<Track> trackData = (List<Track>)data;
+            foreach (var tracks in trackData)
             {
                 int index = CheckIfTrackIsInList(tracks.Tag);
                 if (index>=0)
@@ -36,9 +35,9 @@ namespace ATMEnhanced.Classes
                 }
             }
             //overskriver de gamle tracks med de nye.
-            _prevTracks = trackData.Tracks;
+            _prevTracks = trackData;
 
-            base.Handle(data);
+            base.Handle(trackData);
         }
 
         public int CheckIfTrackIsInList(string tag)

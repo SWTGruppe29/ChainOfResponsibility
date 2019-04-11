@@ -23,6 +23,7 @@ namespace ATMEnhanced.Classes
 
         protected override void Handle(object data)
         {
+            Console.Clear();
             TrackData trackData = (TrackData) data;
             Print(trackData.Tracks, trackData.Conflicts);
             base.Handle(data);

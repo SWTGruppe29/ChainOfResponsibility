@@ -31,6 +31,7 @@ namespace ATMEnhanced.Classes
 
         protected override void Handle(object data)
         {
+            _tracks = new List<Track>();
             foreach (var track in (List<string>)data)
             {
                 List(track);
@@ -39,7 +40,7 @@ namespace ATMEnhanced.Classes
                 Track newTrack = new Track(flightNum, x, y, alt, dateTimeNew);
                 _tracks.Add(newTrack);
             }
-            base.Handle(_tracks);
+            base.Handle(new List<Track>(_tracks));
         }
 
 

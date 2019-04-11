@@ -24,16 +24,13 @@ namespace ATMEnhanced.Classes
             _decoder = new Decoder();
             _regionFilter = new RegionFilter(new AirSpace(10000, 90000, 90000, 10000, 20000, 500));
             _trackUpdater = new TrackUpdater();
-            _separationChecker = new SeparationChecker(new SeparationCondition(300,5000));
+            _separationChecker = new SeparationChecker(new SeparationCondition(3000,10000));
             _consolePrinter = new ConsolePrinter();
             _logger = new Logger();
+
             _receiver.SetSuccessor(_decoder).SetSuccessor(_regionFilter).SetSuccessor(_trackUpdater)
                 .SetSuccessor(_separationChecker).SetSuccessor(_consolePrinter).SetSuccessor(_logger);
         }
 
-        public void Start()
-        {
-
-        }
     }
 }

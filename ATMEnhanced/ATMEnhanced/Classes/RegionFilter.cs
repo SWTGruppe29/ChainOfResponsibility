@@ -21,20 +21,21 @@ namespace ATMEnhanced.Classes
 
         protected override void Handle(object data)
         {
-            TrackData trackData = (TrackData)data;
+            _trackData = (List<Track>)data;
 
-            _trackData = trackData.Tracks;
-
+            List<Track> tracksToRemove = new List<Track>();
             foreach (var track in _trackData)
             {
                 if(!_airSpace.IsInAirSpace(track.XCoordinate,track.YCoordinate,track.Altitude))
                 {
-                    int index = CheckIfTrackIsInList(track.Tag);
-                    _trackData.RemoveAt(index);
-                    
+                    tracksToRemove.Add(track);
                 }
             }
 
+            foreach (var track in tracksToRemove)
+            {
+                _trackData.Remove(track);
+            }
             base.Handle(_trackData);
         }
 
