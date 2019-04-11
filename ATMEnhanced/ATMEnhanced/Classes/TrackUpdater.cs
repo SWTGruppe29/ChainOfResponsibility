@@ -10,11 +10,17 @@ using static ATM.Interfaces.ITrackCalculator;
 
 namespace ATMEnhanced.Classes
 {
-    class TrackUpdater : Handler, ITrackUpdater
+    public class TrackUpdater : Handler, ITrackUpdater
     {
         private ITrackCalculator _calculator;
         private List<Track> _prevTracks;
         private DateTime dateTimeNow;
+
+        public TrackUpdater(ITrackCalculator calculator)
+        {
+            _calculator = calculator;
+            _prevTracks = new List<Track>();
+        }
 
         protected override void Handle(object data)
         {

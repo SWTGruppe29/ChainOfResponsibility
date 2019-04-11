@@ -11,17 +11,29 @@ namespace ATMEnhanced.Classes
 {
     public class ATMSystemFactory
     {
+        private TransponderDataReceiver _receiver;
+        private Decoder _decoder;
+        private RegionFilter _regionFilter;
+        private TrackUpdater _trackUpdater;
+        private SeparationChecker _separationChecker;
+        private ConsolePrinter _consolePrinter;
+        private Logger _logger;
         public void CreateATMSystem()
         {
-            TransponderDataReceiver receiver = new TransponderDataReceiver(TransponderReceiverFactory.CreateTransponderDataReceiver());
-            Decoder decoder = new Decoder();
-            RegionFilter regionFilter = new RegionFilter(new AirSpace(10000, 90000, 90000, 10000, 20000, 500));
-            TrackUpdater trackUpdater = new TrackUpdater();
-            SeparationChecker separationChecker = new SeparationChecker(new SeparationCondition(300,5000));
-            ConsolePrinter consolePrinter = new ConsolePrinter();
-            Logger logger = new Logger();
-            receiver.SetSuccessor(decoder).SetSuccessor(regionFilter).SetSuccessor(trackUpdater)
-                .SetSuccessor(separationChecker).SetSuccessor(consolePrinter).SetSuccessor(logger);
+            _receiver = new TransponderDataReceiver(TransponderReceiverFactory.CreateTransponderDataReceiver());
+            _decoder = new Decoder();
+            _regionFilter = new RegionFilter(new AirSpace(10000, 90000, 90000, 10000, 20000, 500));
+            _trackUpdater = new TrackUpdater();
+            _separationChecker = new SeparationChecker(new SeparationCondition(300,5000));
+            _consolePrinter = new ConsolePrinter();
+            _logger = new Logger();
+            _receiver.SetSuccessor(_decoder).SetSuccessor(_regionFilter).SetSuccessor(_trackUpdater)
+                .SetSuccessor(_separationChecker).SetSuccessor(_consolePrinter).SetSuccessor(_logger);
+        }
+
+        public void Start()
+        {
+
         }
     }
 }
