@@ -21,11 +21,13 @@ namespace ATMEnhanced.Classes
             PrintConflicts(conflictTags);
         }
 
-        protected override void Handle(TrackData data)
+        protected override void Handle(object data)
         {
-            Print(data.Tracks, data.Conflicts);
+            TrackData trackData = (TrackData) data;
+            Print(trackData.Tracks, trackData.Conflicts);
             base.Handle(data);
         }
+
 
         /// <summary>
         /// Returns false if no airplanes was in conflict, else true

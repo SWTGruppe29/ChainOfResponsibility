@@ -49,13 +49,14 @@ namespace ATMEnhanced.Classes
             
         }
 
-        protected override void Handle(TrackData data)
+        protected override void Handle(object data)
         {
-            if (data.Conflicts.Count!=0)
+            TrackData trackData = (TrackData)data;
+            if (trackData.Conflicts.Count != 0)
             {
-                LogMessage(data.Conflicts);
+                LogMessage(trackData.Conflicts);
             }
-            
+
             base.Handle(data);
         }
     }
