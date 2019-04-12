@@ -19,7 +19,7 @@ namespace ATMEnhanced.Classes
             _airSpace = airSpace;
         }
 
-        protected override void Handle(object data)
+        public override void Handle(object data)
         {
             _trackData = (List<Track>)data;
 

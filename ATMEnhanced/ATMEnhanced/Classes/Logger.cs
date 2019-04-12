@@ -49,7 +49,7 @@ namespace ATMEnhanced.Classes
             
         }
 
-        protected override void Handle(object data)
+        public override void Handle(object data)
         {
             TrackData trackData = (TrackData)data;
             if (trackData.Conflicts.Count != 0)

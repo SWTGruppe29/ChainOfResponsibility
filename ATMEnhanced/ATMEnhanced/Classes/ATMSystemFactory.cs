@@ -11,13 +11,13 @@ namespace ATMEnhanced.Classes
 {
     public class ATMSystemFactory
     {
-        private TransponderDataReceiver _receiver;
-        private Decoder _decoder;
-        private RegionFilter _regionFilter;
-        private TrackUpdater _trackUpdater;
-        private SeparationChecker _separationChecker;
-        private ConsolePrinter _consolePrinter;
-        private Logger _logger;
+        private IHandler _receiver;
+        private IHandler _decoder;
+        private IHandler _regionFilter;
+        private IHandler _trackUpdater;
+        private IHandler _separationChecker;
+        private IHandler _consolePrinter;
+        private IHandler _logger;
         public void CreateATMSystem()
         {
             _receiver = new TransponderDataReceiver(TransponderReceiverFactory.CreateTransponderDataReceiver());

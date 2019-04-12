@@ -21,7 +21,7 @@ namespace ATMEnhanced.Classes
             PrintConflicts(conflictTags);
         }
 
-        protected override void Handle(object data)
+        public override void Handle(object data)
         {
             Console.Clear();
             TrackData trackData = (TrackData) data;
