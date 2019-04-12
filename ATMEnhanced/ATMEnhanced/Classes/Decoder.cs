@@ -29,7 +29,7 @@ namespace ATMEnhanced.Classes
             _tracks = tracks;
         }
 
-        protected override void Handle(object data)
+        public override void Handle(object data)
         {
             _tracks = new List<Track>();
             foreach (var track in (List<string>)data)

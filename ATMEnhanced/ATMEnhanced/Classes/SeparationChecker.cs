@@ -12,7 +12,7 @@ namespace ATM.Classes
 {
     public class SeparationChecker : Handler, ISeparationChecker
     {
-        protected override void Handle(object data)
+        public override void Handle(object data)
         {
             List<Track> tracks = (List<Track>) data;
             foreach (var track in tracks)

@@ -3,20 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ATMEnhanced.Interfaces;
 
 namespace ATMEnhanced.Classes
 {
-    public abstract class Handler
+    public abstract class Handler : IHandler
     {
-        protected Handler _successor;
+        protected IHandler _successor;
 
-        public Handler SetSuccessor(Handler successor)
+        public IHandler SetSuccessor(IHandler successor)
         {
             _successor = successor;
             return _successor;
         }
 
-        protected virtual void Handle(object data)
+        public virtual void Handle(object data)
         {
             _successor?.Handle(data);
         }

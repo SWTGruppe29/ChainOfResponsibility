@@ -21,7 +21,7 @@ namespace ATMEnhanced.Classes
             _prevTracks = new List<Track>();
         }
 
-        protected override void Handle(object data)
+        public override void Handle(object data)
         {
             List<Track> trackData = (List<Track>)data;
             foreach (var tracks in trackData)

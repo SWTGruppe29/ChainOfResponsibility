@@ -69,6 +69,7 @@
     <Compile Include="Interfaces\ICondition.cs" />
     <Compile Include="Interfaces\IConsolePrinter.cs" />
     <Compile Include="Interfaces\IDecoder.cs" />
+    <Compile Include="Interfaces\IHandler.cs" />
     <Compile Include="Interfaces\ILogger.cs" />
     <Compile Include="Interfaces\IRegionFilter.cs" />
     <Compile Include="Interfaces\ISeparationChecker.cs" />
